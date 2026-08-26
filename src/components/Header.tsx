@@ -3,8 +3,6 @@ import { Menu, X, MessageCircle, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
 import { messageForPath, site, whatsappLink } from "@/config/site";
 
-
-
 const nav = [
   { to: "/", label: "Início" },
   { to: "/servicos", label: "Serviços" },
@@ -12,7 +10,6 @@ const nav = [
   { to: "/depoimentos", label: "Depoimentos" },
   { to: "/contato", label: "Contato" },
 ];
-
 
 export function Header() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -26,18 +23,13 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/95 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-4 md:h-20">
         <Link to="/" className="flex min-w-0 items-center gap-2.5">
-          <img
-            src="/logo.png"
-            alt="Logo"
-            className="h-12 w-auto shrink-0 md:h-16"
-          />
+          <img src="/logo.png" alt="Logo" className="h-12 w-auto shrink-0 md:h-16" />
           <span className="hidden min-w-0 xl:block">
             <span className="block truncate text-xs text-muted-foreground">
               Especialistas em ar-condicionado
             </span>
           </span>
         </Link>
-
 
         <nav className="hidden items-center gap-6 lg:flex">
           {nav.map((item) => (

@@ -34,7 +34,6 @@ const canais = [
   { icon: Clock, label: "Horário de atendimento", value: site.horario },
 ];
 
-
 function ContatoPage() {
   return (
     <>
@@ -69,22 +68,26 @@ function ContatoPage() {
           <div className="navy-panel rounded-2xl p-8">
             <h2 className="text-xl font-bold">Prefere atendimento rápido?</h2>
             <p className="mt-3 text-sm leading-relaxed text-navy-foreground/80">
-              Chame no WhatsApp, descreva o aparelho e o serviço desejado. Também é possível enviar sua
-              solicitação pelo formulário de orçamento.
+              Chame no WhatsApp, descreva o aparelho e o serviço desejado. Também é possível enviar
+              sua solicitação pelo formulário de orçamento.
             </p>
             <ul className="mt-6 space-y-3">
-              {["Resposta pelo canal de sua preferência", "Atendimento profissional", "Orçamento sem compromisso"].map(
-                (t) => (
-                  <li key={t} className="flex items-center gap-2.5 text-sm text-navy-foreground/85">
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-tech" />
-                    {t}
-                  </li>
-                ),
-              )}
+              {[
+                "Resposta pelo canal de sua preferência",
+                "Atendimento profissional",
+                "Orçamento sem compromisso",
+              ].map((t) => (
+                <li key={t} className="flex items-center gap-2.5 text-sm text-navy-foreground/85">
+                  <CheckCircle2 className="h-4 w-4 shrink-0 text-tech" />
+                  {t}
+                </li>
+              ))}
             </ul>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <CtaAnchor
-                href={whatsappLink("Olá! Gostaria de falar com a equipe da JJ ELETRONICOS sobre ar-condicionado.")}
+                href={whatsappLink(
+                  "Olá! Gostaria de falar com a equipe da JJ ELETRONICOS sobre ar-condicionado.",
+                )}
               >
                 FALAR PELO WHATSAPP
               </CtaAnchor>

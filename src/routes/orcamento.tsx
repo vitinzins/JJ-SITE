@@ -18,7 +18,8 @@ export const Route = createFileRoute("/orcamento")({
       { property: "og:title", content: "Solicitar orçamento de ar-condicionado | JJ ELETRONICOS" },
       {
         property: "og:description",
-        content: "Preencha o formulário e nossa equipe entra em contato para preparar o atendimento.",
+        content:
+          "Preencha o formulário e nossa equipe entra em contato para preparar o atendimento.",
       },
       { property: "og:url", content: "/orcamento" },
     ],
@@ -131,7 +132,13 @@ function OrcamentoPage() {
                   <label htmlFor="servico" className="mb-2 block text-sm font-semibold">
                     Serviço desejado *
                   </label>
-                  <select id="servico" name="servico" defaultValue="" className={fieldClass} required>
+                  <select
+                    id="servico"
+                    name="servico"
+                    defaultValue=""
+                    className={fieldClass}
+                    required
+                  >
                     <option value="" disabled>
                       Selecione
                     </option>
@@ -170,7 +177,11 @@ function OrcamentoPage() {
                   >
                     SOLICITAR ORÇAMENTO
                   </button>
-                  <CtaAnchor href={whatsappLink("Olá! Gostaria de solicitar um orçamento de ar-condicionado.")}>
+                  <CtaAnchor
+                    href={whatsappLink(
+                      "Olá! Gostaria de solicitar um orçamento de ar-condicionado.",
+                    )}
+                  >
                     FALAR PELO WHATSAPP
                   </CtaAnchor>
                 </div>

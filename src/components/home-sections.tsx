@@ -75,10 +75,7 @@ export function GaleriaTrabalhos() {
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {galeria.map((foto) => (
-            <figure
-              key={foto.alt}
-              className="card-surface group relative overflow-hidden p-0"
-            >
+            <figure key={foto.alt} className="card-surface group relative overflow-hidden p-0">
               <img
                 src={foto.src}
                 alt={foto.alt}
@@ -109,7 +106,10 @@ export function PlanosManutencao() {
         />
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {planos.map((plano) => (
-            <article key={plano.nome} className="card-surface flex flex-col border-t-2 border-t-gold p-6">
+            <article
+              key={plano.nome}
+              className="card-surface flex flex-col border-t-2 border-t-gold p-6"
+            >
               <h3 className="text-base font-bold">{plano.nome}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{plano.resumo}</p>
               <p className="mt-4 text-lg font-extrabold text-primary">{plano.preco}</p>

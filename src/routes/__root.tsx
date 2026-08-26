@@ -8,13 +8,13 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-
 
 function NotFoundComponent() {
   return (
@@ -90,12 +90,34 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "JJ ELETRONICOS" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "JJ ELETRONICOS | Instalação e Manutenção em Montes Claros" },
-      { name: "twitter:title", content: "JJ ELETRONICOS | Instalação e Manutenção em Montes Claros" },
-      { property: "og:description", content: "Especialistas em ar-condicionado: instalação de Split, Multi-Split e VRF, manutenção preventiva e corretiva em Montes Claros, Guaraciama e região." },
-      { name: "twitter:description", content: "Especialistas em ar-condicionado: instalação de Split, Multi-Split e VRF, manutenção preventiva e corretiva em Montes Claros, Guaraciama e região." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/872ac0cd-7f69-4eda-9646-83c4e798b99a/id-preview-7214c782--8a066327-3b8b-4b0b-9e62-590e8e496994.lovable.app-1785888116817.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/872ac0cd-7f69-4eda-9646-83c4e798b99a/id-preview-7214c782--8a066327-3b8b-4b0b-9e62-590e8e496994.lovable.app-1785888116817.png" },
+      {
+        property: "og:title",
+        content: "JJ ELETRONICOS | Instalação e Manutenção em Montes Claros",
+      },
+      {
+        name: "twitter:title",
+        content: "JJ ELETRONICOS | Instalação e Manutenção em Montes Claros",
+      },
+      {
+        property: "og:description",
+        content:
+          "Especialistas em ar-condicionado: instalação de Split, Multi-Split e VRF, manutenção preventiva e corretiva em Montes Claros, Guaraciama e região.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Especialistas em ar-condicionado: instalação de Split, Multi-Split e VRF, manutenção preventiva e corretiva em Montes Claros, Guaraciama e região.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/872ac0cd-7f69-4eda-9646-83c4e798b99a/id-preview-7214c782--8a066327-3b8b-4b0b-9e62-590e8e496994.lovable.app-1785888116817.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/872ac0cd-7f69-4eda-9646-83c4e798b99a/id-preview-7214c782--8a066327-3b8b-4b0b-9e62-590e8e496994.lovable.app-1785888116817.png",
+      },
     ],
     links: [
       {
@@ -129,7 +151,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           },
           areaServed: ["Guaraciama - MG", "Montes Claros - MG", "Norte de Minas"],
           openingHours: "Mo-Fr 08:00-18:00",
-
         }),
       },
     ],
@@ -157,6 +178,7 @@ function RootShell({ children }: { children: ReactNode }) {
           />
         </noscript>
         {children}
+        <Analytics />
         <Scripts />
       </body>
     </html>
@@ -179,5 +201,4 @@ function RootComponent() {
       </div>
     </QueryClientProvider>
   );
-
 }

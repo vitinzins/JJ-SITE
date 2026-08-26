@@ -2,7 +2,6 @@ import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, MessageCircle, Clock, Phone } from "lucide-react";
 import { site, whatsappLink } from "@/config/site";
 
-
 const paginas = [
   { to: "/", label: "Início" },
   { to: "/servicos", label: "Serviços" },
@@ -22,7 +21,6 @@ const servicos = [
   { to: "/orcamento", label: "Contratos e PMOC" },
 ];
 
-
 export function Footer() {
   return (
     <footer className="navy-panel mt-0">
@@ -37,7 +35,6 @@ export function Footer() {
             {site.tagline}
           </p>
         </div>
-
 
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-tech">Navegação</p>

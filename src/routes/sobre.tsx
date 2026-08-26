@@ -56,8 +56,8 @@ function SobrePage() {
               </p>
               <p>
                 Ao longo de 6 anos de mercado, nos especializamos em ar-condicionado — instalação de
-                Split, Multi-Split, VRF e Cassete, manutenção preventiva e corretiva —, sempre com
-                o mesmo compromisso: qualidade, transparência e perfeição em cada serviço prestado.
+                Split, Multi-Split, VRF e Cassete, manutenção preventiva e corretiva —, sempre com o
+                mesmo compromisso: qualidade, transparência e perfeição em cada serviço prestado.
               </p>
               <p>
                 Hoje, atendemos Guaraciama, Montes Claros e região, e seguimos crescendo para levar
@@ -77,30 +77,28 @@ function SobrePage() {
 
       <section className="section-y pt-0">
         <div className="container-page grid gap-6 md:grid-cols-2">
-
-            <div className="card-surface p-7">
-              <span className="grid h-10 w-10 place-items-center rounded-lg bg-accent text-primary">
-                <Target className="h-5 w-5" />
-              </span>
-              <h2 className="mt-4 text-lg font-bold">Nossa missão</h2>
-              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
-                Manter cada ambiente climatizado com segurança e eficiência, com execução técnica de
-                qualidade e atendimento próximo ao cliente.
-              </p>
-            </div>
-            <div className="card-surface p-7">
-              <span className="grid h-10 w-10 place-items-center rounded-lg bg-accent text-primary">
-                <Eye className="h-5 w-5" />
-              </span>
-              <h2 className="mt-4 text-lg font-bold">Nossa visão</h2>
-              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
-                Ser referência em ar-condicionado no Norte de Minas pela qualidade dos serviços e pela
-                confiança construída com nossos clientes.
-              </p>
-            </div>
+          <div className="card-surface p-7">
+            <span className="grid h-10 w-10 place-items-center rounded-lg bg-accent text-primary">
+              <Target className="h-5 w-5" />
+            </span>
+            <h2 className="mt-4 text-lg font-bold">Nossa missão</h2>
+            <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+              Manter cada ambiente climatizado com segurança e eficiência, com execução técnica de
+              qualidade e atendimento próximo ao cliente.
+            </p>
+          </div>
+          <div className="card-surface p-7">
+            <span className="grid h-10 w-10 place-items-center rounded-lg bg-accent text-primary">
+              <Eye className="h-5 w-5" />
+            </span>
+            <h2 className="mt-4 text-lg font-bold">Nossa visão</h2>
+            <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+              Ser referência em ar-condicionado no Norte de Minas pela qualidade dos serviços e pela
+              confiança construída com nossos clientes.
+            </p>
+          </div>
         </div>
       </section>
-
 
       <CtaBlock
         title="Precisa de um orçamento?"

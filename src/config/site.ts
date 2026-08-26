@@ -17,7 +17,6 @@ export const site = {
   telefoneLabel: "(38) 9 9993-1634",
 } as const;
 
-
 export function whatsappLink(message: string) {
   return `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }

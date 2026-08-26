@@ -33,8 +33,7 @@ export const pilares: Pilar[] = [
       "Tubulação frigorígena e ponto elétrico",
       "Vácuo, carga de gás e teste de estanqueidade",
     ],
-    whatsappMessage:
-      "Olá! Gostaria de solicitar um orçamento para instalação de ar-condicionado.",
+    whatsappMessage: "Olá! Gostaria de solicitar um orçamento para instalação de ar-condicionado.",
   },
   {
     slug: "preventiva",
@@ -193,7 +192,8 @@ export const planos = [
       "Limpeza de filtros e bandeja de dreno",
       "Checagem de gás e medição elétrica",
     ],
-    whatsappMessage: "Olá! Gostaria de consultar o Plano Residencial de manutenção de ar-condicionado.",
+    whatsappMessage:
+      "Olá! Gostaria de consultar o Plano Residencial de manutenção de ar-condicionado.",
   },
   {
     nome: "Plano Comercial / Empresarial",
@@ -205,7 +205,8 @@ export const planos = [
       "Prioridade em chamados corretivos",
       "Relatório técnico de cada visita",
     ],
-    whatsappMessage: "Olá! Gostaria de consultar o Plano Comercial de manutenção de ar-condicionado.",
+    whatsappMessage:
+      "Olá! Gostaria de consultar o Plano Comercial de manutenção de ar-condicionado.",
   },
   {
     nome: "Plano PMOC",

@@ -5,7 +5,11 @@ import { pilares, diferenciais, etapas, faq } from "@/config/servicos";
 import { whatsappLink } from "@/config/site";
 import { CtaAnchor, CtaLink, SectionHeading } from "@/components/ui-kit";
 import { CtaBlock, ServiceCard } from "@/components/blocks";
-import { DepoimentosDestaque, GaleriaTrabalhos, PlanosManutencao } from "@/components/home-sections";
+import {
+  DepoimentosDestaque,
+  GaleriaTrabalhos,
+  PlanosManutencao,
+} from "@/components/home-sections";
 
 const TITLE = "Ar-Condicionado em Montes Claros | Instalação e Manutenção | JJ ELETRONICOS";
 const DESCRIPTION =

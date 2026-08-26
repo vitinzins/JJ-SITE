@@ -8,7 +8,8 @@ const toneClasses: Record<Tone, string> = {
   primary: "bg-primary text-primary-foreground hover:bg-primary/90",
   whatsapp: "bg-whats text-whats-foreground hover:bg-whats/90",
   outline: "border border-border bg-card text-foreground hover:bg-accent",
-  "ghost-light": "border border-navy-foreground/30 text-navy-foreground hover:bg-navy-foreground/10",
+  "ghost-light":
+    "border border-navy-foreground/30 text-navy-foreground hover:bg-navy-foreground/10",
 };
 
 const base =
@@ -109,10 +110,7 @@ export function CheckList({ items, light = false }: { items: string[]; light?: b
         <li key={item} className="flex items-start gap-3">
           <span
             aria-hidden
-            className={cn(
-              "mt-1.5 h-2 w-2 shrink-0 rounded-full",
-              light ? "bg-tech" : "bg-primary",
-            )}
+            className={cn("mt-1.5 h-2 w-2 shrink-0 rounded-full", light ? "bg-tech" : "bg-primary")}
           />
           <span
             className={cn(

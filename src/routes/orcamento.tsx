@@ -4,7 +4,8 @@ import { CheckCircle2 } from "lucide-react";
 import { z } from "zod";
 import { PageHero } from "@/components/blocks";
 import { CtaAnchor, SectionHeading } from "@/components/ui-kit";
-import { whatsappLink } from "@/config/site";
+import { site, whatsappLink } from "@/config/site";
+
 
 export const Route = createFileRoute("/orcamento")({
   head: () => ({
@@ -79,7 +80,7 @@ function OrcamentoPage() {
       `*Serviço desejado:* ${d.servico}\n` +
       `*Descrição da necessidade:* ${d.descricao}`;
     setResumo(mensagem);
-    const url = `https://wa.me/5538999931634?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank", "noopener,noreferrer");
     setEnviado(true);
   }

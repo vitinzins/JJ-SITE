@@ -5,16 +5,16 @@ export const site = {
   name: "JJ ELETRONICOS",
   tagline:
     "Especialistas em ar-condicionado: instalação, manutenção preventiva e corretiva com garantia de serviço.",
-  whatsappNumber: "5538999931634",
-  whatsappLabel: "(38) 9 9993-1634",
+  whatsappNumber: "5531986542073",
+  whatsappLabel: "(31) 9 8654-2073",
   whatsappNumber2: "5538999230225",
   whatsappLabel2: "(38) 9 9923-0225",
   email: "jjeletronicos86@gmail.com",
   cidade: "Guaraciama - MG",
   regiao: "Guaraciama - MG · Atendimento em Montes Claros e região",
   horario: "Segunda a sexta, 08:00 às 18:00",
-  telefone: "+5538999931634",
-  telefoneLabel: "(38) 9 9993-1634",
+  telefone: "+5531986542073",
+  telefoneLabel: "(31) 9 8654-2073",
 } as const;
 
 

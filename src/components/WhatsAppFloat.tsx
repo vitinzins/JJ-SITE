@@ -1,7 +1,9 @@
+import { site } from "@/config/site";
+
 export function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/5538999931634?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20JJ%20ELETRONICOS."
+      href={`https://wa.me/${site.whatsappNumber}?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20JJ%20ELETRONICOS.`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"

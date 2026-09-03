@@ -120,7 +120,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           description:
             "Instalação e manutenção de ar-condicionado Split, Multi-Split, VRF e Cassete.",
           email: "jjeletronicos86@gmail.com",
-          telephone: "+5538999931634",
+          telephone: "+5531986542073",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Guaraciama",
